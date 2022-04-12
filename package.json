@@ -1,0 +1,31 @@
+{
+  "name": "gather-summon",
+  "version": "0.0.1",
+  "description": "Simple gather bot",
+  "main": "index.js",
+  "scripts": {
+    "test": "test",
+    "build": "tsc",
+    "start": "node ./dist/index.js",
+    "dev": "yarn build && yarn start",
+    "watch": "nodemon ./src/index.ts",
+    "postinstall": "patch-package"
+  },
+  "author": "hjusic",
+  "license": "ISC",
+  "dependencies": {
+    "@gathertown/gather-game-client": "^36.0.3",
+    "@slack/web-api": "^6.7.1",
+    "dotenv": "^16.0.0",
+    "gathertown.js": "^1.0.0-alpha.1",
+    "isomorphic-ws": "^4.0.1",
+    "postinstall-postinstall": "^2.1.0",
+    "ws": "^8.5.0"
+  },
+  "devDependencies": {
+    "@types/ws": "^8.5.3",
+    "nodemon": "^2.0.15",
+    "ts-node": "^10.7.0",
+    "typescript": "^4.6.3"
+  }
+}
