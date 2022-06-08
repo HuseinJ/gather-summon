@@ -24,10 +24,8 @@ export class GameHandler {
     }
 
     private initGather = (): Game => {
-        // create the game object, giving it your API key in this weird way
         // @ts-ignore
         const game = new Game(SPACE_ID, () => Promise.resolve({ apiKey: API_KEY }));
-        // this is the line that actually connects to the server and starts initializing stuff
         
         game.connect();
         console.log(`Connected to Gather!`);
